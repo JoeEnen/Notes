@@ -11,11 +11,10 @@ These functions work with multiple rows but return one output.
 The COUNT() function is used to count the number of rows in a table or the number of non-null values in a column.
 
 🔹 Syntax:
-
-sql
-Copy
-Edit
+```sql
 SELECT COUNT(*) FROM employees;
+```
+
 🔹 Example Output:
 
 COUNT(*)
@@ -25,10 +24,9 @@ The SUM() function calculates the total sum of a numeric column.
 
 🔹 Syntax:
 
-sql
-Copy
-Edit
+ ```sql
 SELECT SUM(salary) FROM employees;
+```
 🔹 Example Output:
 
 SUM(salary)
@@ -39,11 +37,10 @@ Tip: Works only with numeric columns.
 The AVG() function calculates the average (mean) value of a numeric column.
 
 🔹 Syntax:
-
-sql
-Copy
-Edit
+```sql
 SELECT AVG(salary) FROM employees;
+```
+
 🔹 Example Output:
 
 AVG(salary)
@@ -70,10 +67,9 @@ MIN(salary)
 
 🔹 Syntax:
 
-sql
-Copy
-Edit
+```sql
 SELECT MAX(salary) FROM employees;
+```
 Example Output:
 
 MAX(salary)
@@ -85,12 +81,13 @@ You can use aggregate functions with the GROUP BY clause to summarize data for e
 
 Example: Find the average salary for each department.
 
-sql
+```sql
 Copy
 Edit
 SELECT department, AVG(salary) 
 FROM employees
 GROUP BY department;
+```
 
 Example Output:
 
