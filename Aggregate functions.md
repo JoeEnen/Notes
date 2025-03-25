@@ -21,18 +21,19 @@ For thispresentation,we willuse this simple table as ereference,
 
 The COUNT() function is used to count the number of rows in a table or the number of non-null values in a column.
 
-For instance,let;'s assume I want to calc
+For instance,let;'s assume I want to calc number of transactions
 ```sql
-SELECT COUNT(*) FROM employees;
+SELECT COUNT(*) AS total_transactions FROM transactions;
+
 ```
 
 Example Output:
 
-*COUNT(*)*
+*COUNT(totaltransactions)*
 
-50
+5
 
-(shows total employees)
+(shows total transactions)
 
 ## 2. SUM() – Adding Values
 The SUM() function calculates the total sum of a numeric column.
@@ -40,15 +41,14 @@ The SUM() function calculates the total sum of a numeric column.
 
 
  ```sql
-SELECT SUM(salary) FROM employees;
+SELECT SUM(amount) AS total_amount FROM transactions;
 ```
 Example Output:
 
-*SUM(salary)*
+*SUM(amount)*
 
-1,200,000
+16.9
 
-(shows total salary of all employees)
 
 Note: Works only with numeric columns.
 
@@ -57,16 +57,16 @@ The AVG() function calculates the average (mean) value of a numeric column.
 
 
 ```sql
-SELECT AVG(salary) FROM employees;
+SELECT AVG(amount) AS average_amount FROM transactions;
 ```
 
 Example Output:
 
-*AVG(salary)*
+*AVG(amount)*
 
-24,000
+3.38
 
-(Average salary of employees)
+(Average amount)
 
  Note: Ignores NULL values when calculating the average.
 
@@ -74,28 +74,28 @@ Example Output:
 The MIN() function returns the lowest value in a column.
 
 ```sql
-SELECT MIN(salary) FROM employees;
+SELECT MIN(amount) AS min_amount FROM transactions;
 ```
 
 Example Output:
 
-*MIN(salary)*
+*MIN(amount)*
 
-15,000
+1
 
-(Lowest salary in the company)
+(Lowest amount)
 
 ## 5.MAX() – Finding the Largest Value
  The MAX() function returns the highest value in a column.
 
 
 ```sql
-SELECT MAX(salary) FROM employees;
+SELECT MAX(amount) AS max_amount FROM transactions;
 ```
 Example Output:
 
-*MAX(salary)*
+*MAX(amount)*
 
-50,000
+4.9
 
-(Highest salary in the company)
+(Highest amount in the table)
