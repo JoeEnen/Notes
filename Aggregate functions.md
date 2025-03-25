@@ -63,6 +63,7 @@ SELECT MIN(salary) FROM employees;
 Example Output:
 
 *MIN(salary)*
+
 15,000
 
 ## 5.MAX() – Finding the Largest Value
@@ -75,4 +76,5 @@ SELECT MAX(salary) FROM employees;
 Example Output:
 
 *MAX(salary)*
+
 50,000
