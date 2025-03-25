@@ -8,7 +8,7 @@ These functions work with multiple rows but return one output.
 
 For thispresentation,we willuse this simple table as ereference, 
 
-| Transaction ID | Amount | Customer ID |
+| Transaction ID | amount | Customer ID |
 |---------------|--------|-------------|
 | 1000          | 4.9    | 3           |
 | 1001          | 2.8    | 2           |
@@ -23,13 +23,14 @@ The COUNT() function is used to count the number of rows in a table or the numbe
 
 For instance,let;'s assume I want to calc number of transactions
 ```sql
-SELECT COUNT(*) AS total_transactions FROM transactions;
-
+SELECT COUNT(amount) AS amount
+FROM transactions;
 ```
+This will calculate the number of rows in the amount column.
 
-Example Output:
+Transactionsisthe table.
 
-*COUNT(totaltransactions)*
+Output:
 
 5
 
@@ -41,11 +42,10 @@ The SUM() function calculates the total sum of a numeric column.
 
 
  ```sql
-SELECT SUM(amount) AS total_amount FROM transactions;
+SELECT SUM(amount) AS total_amount
+FROM transactions;
 ```
-Example Output:
-
-*SUM(amount)*
+Output:
 
 16.9
 
@@ -57,12 +57,11 @@ The AVG() function calculates the average (mean) value of a numeric column.
 
 
 ```sql
-SELECT AVG(amount) AS average_amount FROM transactions;
+SELECT AVG(amount) AS average_amount 
+FROM transactions;
 ```
 
-Example Output:
-
-*AVG(amount)*
+Output:
 
 3.38
 
@@ -77,9 +76,7 @@ The MIN() function returns the lowest value in a column.
 SELECT MIN(amount) AS min_amount FROM transactions;
 ```
 
-Example Output:
-
-*MIN(amount)*
+Output:
 
 1
 
@@ -92,9 +89,7 @@ Example Output:
 ```sql
 SELECT MAX(amount) AS max_amount FROM transactions;
 ```
-Example Output:
-
-*MAX(amount)*
+Output:
 
 4.9
 
