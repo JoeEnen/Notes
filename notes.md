@@ -76,7 +76,9 @@ Example Output:
 MAX(salary)
 50,000
 
-# Using Aggregate Functions with GROUP BY
+
+# Group Clause
+## Using Aggregate Functions with GROUP BY
 
 You can use aggregate functions with the GROUP BY clause to summarize data for each group.
 
@@ -97,12 +99,12 @@ Example Output:
 | Marketing  | 25,000      |
 
 
-# Using Aggregate Functions with WHERE and HAVING
+## Using Aggregate Functions with WHERE and HAVING
 *WHERE* filters rows before aggregation.
 
 *HAVING* filters aggregated results.
 
-🔹 Example: Get the total salary for departments where total salary exceeds 100,000.
+Example: Get the total salary for departments where total salary exceeds 100,000.
 ```sql
 git commit -m "first commit"
 git branch -M main
