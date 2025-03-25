@@ -18,6 +18,7 @@ SELECT COUNT(*) FROM employees;
 🔹 Example Output:
 
 COUNT(*)
+
 50
 
 ## 2. SUM() – Adding Values
@@ -49,7 +50,7 @@ Example Output:
 AVG(salary)
 24,000
 
- Tip: Ignores NULL values when calculating the average.
+ Note: Ignores NULL values when calculating the average.
 
 ## 4. MIN() – Finding the Smallest Value
 The MIN() function returns the lowest value in a column.
@@ -97,9 +98,9 @@ Example Output:
 
 
 # Using Aggregate Functions with WHERE and HAVING
-WHERE filters rows before aggregation.
+*WHERE* filters rows before aggregation.
 
-HAVING filters aggregated results.
+*HAVING* filters aggregated results.
 
 🔹 Example: Get the total salary for departments where total salary exceeds 100,000.
 ```sql
