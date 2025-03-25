@@ -17,7 +17,7 @@ SELECT COUNT(*) FROM employees;
 
 Example Output:
 
-|COUNT(*) |
+*COUNT(*)*
 
 50
 
@@ -31,7 +31,7 @@ SELECT SUM(salary) FROM employees;
 ```
 Example Output:
 
-|SUM(salary)|
+*SUM(salary)*
 
 1,200,000
 
@@ -47,7 +47,8 @@ SELECT AVG(salary) FROM employees;
 
 Example Output:
 
-|AVG(salary)|
+*AVG(salary)*
+
 24,000
 
  Note: Ignores NULL values when calculating the average.
@@ -61,7 +62,7 @@ SELECT MIN(salary) FROM employees;
 
 Example Output:
 
-| MIN(salary)|
+*MIN(salary)*
 15,000
 
 ## 5.MAX() – Finding the Largest Value
@@ -73,5 +74,5 @@ SELECT MAX(salary) FROM employees;
 ```
 Example Output:
 
-|MAX(salary)|
+*MAX(salary)*
 50,000
