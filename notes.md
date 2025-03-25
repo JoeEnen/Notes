@@ -106,10 +106,7 @@ HAVING filters aggregated results.
 
 🔹 Example: Get the total salary for departments where total salary exceeds 100,000.
 
-sql
-Copy
-Edit
-SELECT department, SUM(salary) 
-FROM employees
-GROUP BY department
-HAVING SUM(salary) > 100000;
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/JoeEnen/Notes.git
+git push -u origin main
