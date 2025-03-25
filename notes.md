@@ -105,8 +105,9 @@ WHERE filters rows before aggregation.
 HAVING filters aggregated results.
 
 🔹 Example: Get the total salary for departments where total salary exceeds 100,000.
-
+```sql
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/JoeEnen/Notes.git
 git push -u origin main
+```
