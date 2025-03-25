@@ -46,8 +46,7 @@ Output:
 SELECT customer_id, SUM(amount) AS total_spent
 FROM transactions
 GROUP BY customer_id
-HAVING total_spent > 4.0;
-
+HAVING SUM(amount) > 4.0;
 ```
 Output;
 
@@ -76,5 +75,5 @@ GROUP BY customer_id;
 |------------|------------|
 | 1          | 4.9        |
 | 2          | 2.8        |
-| 3          | 3.3        |
+| 3          | 8.2        |
 
